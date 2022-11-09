@@ -1,0 +1,29 @@
+# Create an English to French dictionary
+print("")
+banner = "FRANCO-ENGLISH"
+x = banner.center(85)
+print(x)
+print("")
+word1 = input("give a words to be translated:\n")
+word2 = input("give another word for the dictionary:\n")
+
+list_dict = {
+    "growth": {
+        "meaning": "growth is the process of increasing in physical size",
+        "French": ["growth c'est grandir, s'allonger, croitre"],
+        "Spanish": []},
+    "prune": {
+        "meaning": "prune is to cut, the process of removing a branch from a tree",
+        "translate": ["In Spanich podar ", "En Francais c'est tailler ", "In German beshneiden "]}
+}
+print("")
+print(list_dict["growth"]["French"])
+print("")
+if len(list_dict["growth"]["Spanish"]) ==0:
+    print("Word is not in memory")
+
+print("")
+print(list_dict["prune"]["meaning"])
+print("")
+print(list_dict["prune"]["translate"][1])
+print("")
